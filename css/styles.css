@@ -1,3 +1,19 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -15,15 +31,14 @@ body {
 .link {
     text-decoration: none;
 }
-
-/* --HEADER-- */
-.header-con {
-    width: 1230px;
+.container {
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
+
+/* --HEADER-- */
 
 .header {
     background-color: var(--wight-text);
@@ -54,6 +69,7 @@ body {
     margin-right: 93px;
 }
 
+ 
 .header-logo-web {
     color: #2196F3;
 }
@@ -63,12 +79,18 @@ body {
 }
 
 .header-nav {
+        display: flex;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 0;
+        align-items: center;
+}
+
+.header-list {
+    list-style: none;
     display: flex;
-    margin-right: 0;
-    margin-left: 0;
-    text-align: center;
-    margin-bottom: 0;
-    align-items: center;
+    padding: 0;
 }
 
 .header-link {
@@ -83,14 +105,9 @@ body {
     margin-right: 50px;
 }
 
-.header-item {
-    text-decoration: none;
-    display: block;
-    padding: 32px 0;
-    margin-right: 50px;
-    color: ;
 
-}
+
+
 
 .contact-info {
     list-style: none;
@@ -98,8 +115,12 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
-    padding: 32px;
+ 
 }
+
+.item-contact {
+
+} 
 
 .header-mail {
     font-family: 'Roboto';
@@ -137,13 +158,7 @@ body {
 }
 
 /* --HERO-- */
-.container-hero {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .hero {
     text-align: center;
@@ -151,9 +166,7 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    width: 1200;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .hero-text {
@@ -188,6 +201,7 @@ body {
     box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
     background-color: #2196F3;
+    margin-top: 30px;
 }
 
 .hero-btn:hover,
@@ -200,12 +214,7 @@ body {
     padding-top: 94px;
 }
 
-.container-about {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 94px 215px;
-}
+
 
 .about-list {
     display: flex;
@@ -227,7 +236,7 @@ body {
     text-transform: uppercase;
     color: #212121;
     text-align: left;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 
 }
 
@@ -246,14 +255,6 @@ body {
     margin-top: 94px;
 }
 
-.container-details {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .details-title {
     font-weight: 700;
     font-size: 36px;
@@ -261,6 +262,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding-bottom: 50px;
 }
 
 .detail-list {
@@ -287,13 +289,7 @@ body {
     padding-bottom: 94px;
 }
 
-.container-team {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .team-pre-title {
     font-weight: 700;
@@ -302,19 +298,23 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding-bottom: 50px;
 }
 
 .team-list {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding-left: 0;
-
+    flex-direction: row;
+        margin: 0;
+        padding-left: 0;
 }
 
 .team-item {
     width: 270px;
+    height: 368px;
     margin-right: 30px;
+    background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
 
 .list {}
@@ -324,7 +324,9 @@ body {
     font-size: 16px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     color: #212121;
+    padding-top: 30px;
 }
 
 .team-text {
@@ -332,17 +334,15 @@ body {
     font-size: 16px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     color: #757575;
+    padding-top: 10px;
 }
 
 /* --FOOTER-- */
-.container-footer {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.footer {
     background-color: #757575;
+    margin-top: 94px;
 }
 
 .footer-logo {
@@ -354,7 +354,7 @@ body {
     letter-spacing: 0.03em;
     display: block;
     text-decoration: none;
-    margin-bottom: 20px;
+    padding-top: 60px;
 }
 
 .footer-logo-web {
@@ -372,6 +372,7 @@ body {
     align-items: left;
     text-align: left;
     padding-left: 0;
+    padding-top: 20px;
 
 }
 
@@ -406,10 +407,10 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-}
-
 /* ---MAIN--- */
-.main {}
+.main {
+    margin-top: 94px;
+}
 
 .container-main {
     width: 1230px;
@@ -472,7 +473,6 @@ body {
 
 .apps {
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .container-apps {
@@ -484,21 +484,27 @@ body {
 }
 
 .apps-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding-left: 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   padding: 0;
+   margin: 0;
+
+}
+
+.apps-list {
+    flex-basis: calc((100% - 2*30px)/3);
+    
 }
 
 
 .list {}
 
 .apps-item {
-    width: 370px;
-    margin-right: 30px;
-    border: 1px;
-    background-color: rgba(238, 238, 238, 1);
-    margin-bottom: 30px;
+    width: 370px; 
+    height: 404px;
+    background: #FFFFFF;
+        border: 1px solid #EEEEEE;
 }
 
 .apps-title {
@@ -507,6 +513,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.06em;
     color: #212121;
+    padding-top: 20px;
 }
 
 .apps-text {
@@ -515,4 +522,5 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-top: 4px;
 }
